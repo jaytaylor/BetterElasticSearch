@@ -1,0 +1,27 @@
+.klout-score-span {
+    font-size: 14px ;
+    font-weight: bold ;
+    font-family: HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif ;
+    margin-right: 8px ;
+}
+.simple-tweet .klout-score-span {
+    font-size: 12px ;
+    margin-right: 4px ;
+}
+
+.klout-icon-span {
+    margin-right: 3px ;
+    position: relative ;
+    top: 4px ;
+}
+.simple-tweet .klout-icon-span {
+    top: 2px ;
+}
+
+a.klout-link {
+    color: #333 !important ;
+}
+
+a.klout-link:hover {
+    text-decoration: none !important ;
+}

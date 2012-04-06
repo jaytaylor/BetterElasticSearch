@@ -1,0 +1,34 @@
+{
+    "name": "Better ElasticSearch",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "ElasticSearch user-interface usability improvements",
+    "icons": {
+        "16": "icons/elasticsearch-16.png",
+        "32": "icons/elasticsearch-128.png",
+        "48": "icons/elasticsearch-128.png",
+        "128": "icons/elasticsearch-128.png"
+    },
+    "background_page": "background.html",
+    "content_scripts": [
+        {
+            "all_frames": false,
+            "js": [
+                "js/jquery-1.7.1.min.js",
+                "js/jquery.nearest.js",
+                "js/betterelasticsearch.js"
+            ],
+            "css": [
+                "css/kwtr.css"
+            ],
+            "matches": [
+                "http://*/_plugin/head/*"
+            ],
+            "run_at": "document_end",
+            "all_frames": true
+        }
+    ],
+    "permissions": [
+        "http://api.flickr.com/"
+    ]
+}
